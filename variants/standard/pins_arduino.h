@@ -109,7 +109,7 @@ static const uint8_t A7 = PIN_A7;
 //
 // 0-7 PE0-PE7   works
 // 8-13 PB0-PB5  works
-// 14-21 PA0-PA7 works 
+// 14-21 PA0-PA7 works
 // 22-29 PH0-PH7 works
 // 30-35 PG5-PG0 works
 // 36-43 PC7-PC0 works
@@ -123,7 +123,7 @@ static const uint8_t A7 = PIN_A7;
 // these arrays map port names (e.g. port B) to the
 // appropriate addresses for various functions (e.g. reading
 // and writing)
-const uint16_t PROGMEM port_to_mode_PGM[] = {
+const uint16_t port_to_mode_PGM[] = {
 	NOT_A_PORT,
 	NOT_A_PORT,
 	(uint16_t) &DDRB,
@@ -131,7 +131,7 @@ const uint16_t PROGMEM port_to_mode_PGM[] = {
 	(uint16_t) &DDRD,
 };
 
-const uint16_t PROGMEM port_to_output_PGM[] = {
+const uint16_t port_to_output_PGM[] = {
 	NOT_A_PORT,
 	NOT_A_PORT,
 	(uint16_t) &PORTB,
@@ -139,7 +139,7 @@ const uint16_t PROGMEM port_to_output_PGM[] = {
 	(uint16_t) &PORTD,
 };
 
-const uint16_t PROGMEM port_to_input_PGM[] = {
+const uint16_t port_to_input_PGM[] = {
 	NOT_A_PORT,
 	NOT_A_PORT,
 	(uint16_t) &PINB,
@@ -147,7 +147,7 @@ const uint16_t PROGMEM port_to_input_PGM[] = {
 	(uint16_t) &PIND,
 };
 
-const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
+const uint8_t digital_pin_to_port_PGM[] = {
 	PD, /* 0 */
 	PD,
 	PD,
@@ -170,7 +170,7 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PC,
 };
 
-const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
+const uint8_t digital_pin_to_bit_mask_PGM[] = {
 	_BV(0), /* 0, port D */
 	_BV(1),
 	_BV(2),
