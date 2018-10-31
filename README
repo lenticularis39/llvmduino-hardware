@@ -1,0 +1,5 @@
+The goal of this project is to compile Arduino with clang. The reason for this is the possibility to add LLVM passes to further optimize the code in both size and performance.
+
+To use it, download Arduino 1.8.4, replace the folder hardware/arduino/avr with this repository and add clang (clang-8) to arduino/hardware/tools/avr/bin.
+
+The project is currently in a very early stage - the primary goal as of now is to blink a LED, which kind of works, but the delay is wrong and major workarounds had to be used.
